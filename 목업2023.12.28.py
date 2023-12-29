@@ -55,8 +55,8 @@ if selected == emoji.emojize("실시간 CCTV"):
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal2.mp4',  # 두 번째 CCTV 동영상 파일 경로
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4'
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/Faint-Detection.mp4'
         ]
 
         for i in range(2):  # 3행
