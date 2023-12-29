@@ -34,9 +34,10 @@ if selected == emoji.emojize("실시간 CCTV"):
     st.markdown("""
         <style>
         .big-font {
-            font-size:36px !important;
+            font-size:34px !important;
             font-weight: bold;
             color: #1B365C;
+            margin-top: 10px;
         }
         </style>
         """, unsafe_allow_html=True)
