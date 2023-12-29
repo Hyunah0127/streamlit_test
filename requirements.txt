@@ -3,4 +3,3 @@ numpy
 pandas
 streamlit_option_menu
 Pillow
-os
