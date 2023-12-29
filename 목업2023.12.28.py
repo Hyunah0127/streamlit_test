@@ -63,8 +63,8 @@ if selected == emoji.emojize("실시간 CCTV"):
         ]
 
       # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
-      for i in range(3):  # 3행
-            cols = st.columns(3)  # 각 행에 3열
+      for i in range(3):  
+        cols = st.columns(3)  # 각 행에 3열
             for j, col in enumerate(cols, start=1):
                 with col:
                     # 현재 행과 열에 따라 CCTV 번호 계산
