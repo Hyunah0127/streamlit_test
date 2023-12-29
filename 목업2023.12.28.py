@@ -1,14 +1,14 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from streamlit_folium import st_folium
 import pandas as pd
-import folium
 from PIL import Image
 import emoji
 import os
 
 # Page setting
-st.set_page_config(layout="wide", page_title="공항 이상행동 탐지 솔루션")
+st.set_page_config(layout="wide", 
+                   page_title="공항 이상행동 탐지 솔루션",
+                  page_icon='favicon-96x96.png')
 
 
 # 사이드 바 꾸미기
@@ -51,24 +51,15 @@ if selected == emoji.emojize("실시간 CCTV"):
                     
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-<<<<<<< HEAD
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),  # 첫 번째 CCTV 동영상 파일 경로
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),   # 두 번째 CCTV 동영상 파일 경로
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-=======
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal1.mp4'  # CCTV 동영상 파일 경로
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal2.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/Faint-Detection.mp4'
->>>>>>> 0b5043b9df4b799f3a22b621b6d61d0aba3a8f04
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',  # 첫 번째 CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',  # 두 번째 CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
         ]
 
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
@@ -80,94 +71,14 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생
-<<<<<<< HEAD
                     st.video(video_file_paths[cctv_number - 1],start_time=0)
-                   
 
     with tab2:
         st.write("2층")
-=======
-                    st.video(video_file_paths[cctv_number - 1])
-
-    with tab2:
-        # 페이지 번호를 저장할 Session State 생성
-        if 'page' not in st.session_state:
-            st.session_state.page = 1
-        
-        # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
-        video_file_paths = [
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',  # CCTV 동영상 파일 경로
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal6.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal9.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal10.mp4',
-        ]
-        
-        # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
-        for i in range(2):  # 3행
-            cols = st.columns(3)  # 각 행에 3열
-            for j, col in enumerate(cols, start=1):
-                with col:
-                    # 현재 행과 열에 따라 CCTV 번호 계산
-                    cctv_number = i * 3 + j
-                    st.subheader(f"CCTV {cctv_number}")
-                    # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1])
->>>>>>> 0b5043b9df4b799f3a22b621b6d61d0aba3a8f04
 
     with tab3:
         st.write("3층")
         
-<<<<<<< HEAD
-=======
-        # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
-        video_file_paths = [
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',  # CCTV 동영상 파일 경로
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal6.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4'
-        ]
-        
-        # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
-        for i in range(2):  # 3행
-            cols = st.columns(3)  # 각 행에 3열
-            for j, col in enumerate(cols, start=1):
-                with col:
-                    # 현재 행과 열에 따라 CCTV 번호 계산
-                    cctv_number = i * 3 + j
-                    st.subheader(f"CCTV {cctv_number}")
-                    # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1])
-    
-    with tab4:
-        # 페이지 번호를 저장할 Session State 생성
-        if 'page' not in st.session_state:
-            st.session_state.page = 1
-        
-        # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
-        video_file_paths = [
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',  # CCTV 동영상 파일 경로
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal9.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal10.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal1.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal2.mp4'
-        ]
-        
-        # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
-        for i in range(2):  # 3행
-            cols = st.columns(3)  # 각 행에 3열
-            for j, col in enumerate(cols, start=1):
-                with col:
-                    # 현재 행과 열에 따라 CCTV 번호 계산
-                    cctv_number = i * 3 + j
-                    st.subheader(f"CCTV {cctv_number}")
-                    # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1])
->>>>>>> 0b5043b9df4b799f3a22b621b6d61d0aba3a8f04
         
 
 # EVENT 누를 떄
@@ -185,17 +96,4 @@ if selected == emoji.emojize("EVENT"):
 
     st.markdown('<p class="big-font">사고발생 현황</p>', unsafe_allow_html=True)
 
-<<<<<<< HEAD
    
-=======
-    with cols[0]:  # 좌측 페이지
-        # CCTV 영상 출력
-        st.video('https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/falldown_detection.mp4')
-
-    with cols[1]:  # 우측 페이지
-        # 텍스트 출력
-        
-        st.write("사건 관련 인원: 2명")
-
-   
->>>>>>> 0b5043b9df4b799f3a22b621b6d61d0aba3a8f04
