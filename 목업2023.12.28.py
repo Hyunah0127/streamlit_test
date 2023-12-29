@@ -37,7 +37,7 @@ if selected == emoji.emojize("실시간 CCTV"):
             font-size:34px !important;
             font-weight: bold;
             color: #1B365C;
-            margin-top: -40px;
+            margin-top: -75px;
         }
         </style>
         """, unsafe_allow_html=True)
