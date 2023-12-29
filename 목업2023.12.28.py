@@ -55,12 +55,12 @@ if selected == emoji.emojize("실시간 CCTV"):
         
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            os.path.abspath('video/normal1.mp4'),  # CCTV 동영상 파일 경로
-            os.path.abspath('video/normal2.mp4'),
-            os.path.abspath('video/normal3.mp4'),
-            os.path.abspath('video/normal4.mp4'),
-            os.path.abspath('video/normal5.mp4'),
-            os.path.abspath('video/Faint-Detection.mp4')
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal1.mp4'  # CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal2.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/Faint-Detection.mp4'
         ]
         
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
@@ -81,12 +81,12 @@ if selected == emoji.emojize("실시간 CCTV"):
         
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            os.path.abspath('video/normal5.mp4'),  # CCTV 동영상 파일 경로
-            os.path.abspath('video/normal6.mp4'),
-            os.path.abspath('video/normal7.mp4'),
-            os.path.abspath('video/normal8.mp4'),
-            os.path.abspath('video/normal9.mp4'),
-            os.path.abspath('video/normal10.mp4')
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',  # CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal6.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal9.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal10.mp4',
         ]
         
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
@@ -107,12 +107,12 @@ if selected == emoji.emojize("실시간 CCTV"):
         
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            os.path.abspath('video/normal8.mp4'),  # CCTV 동영상 파일 경로
-            os.path.abspath('video/normal7.mp4'),
-            os.path.abspath('video/normal6.mp4'),
-            os.path.abspath('video/normal5.mp4'),
-            os.path.abspath('video/normal4.mp4'),
-            os.path.abspath('video/normal3.mp4')
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',  # CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal6.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4'
         ]
         
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
@@ -133,12 +133,12 @@ if selected == emoji.emojize("실시간 CCTV"):
         
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            os.path.abspath('video/normal7.mp4'),  # CCTV 동영상 파일 경로
-            os.path.abspath('video/normal8.mp4'),
-            os.path.abspath('video/normal9.mp4'),
-            os.path.abspath('video/normal10.mp4'),
-            os.path.abspath('video/normal1.mp4'),
-            os.path.abspath('video/normal2.mp4')
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal7.mp4',  # CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal8.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal9.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal10.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal1.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal2.mp4'
         ]
         
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
@@ -175,7 +175,7 @@ if selected == emoji.emojize("이상행동 발생 구역 모니터링"):
 
     with cols[0]:  # 좌측 페이지
         # CCTV 영상 출력
-        st.video("video/falldown_detection.mp4", start_time=0)
+        st.video('https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/falldown_detection.mp4', start_time=0)
 
     with cols[1]:  # 우측 페이지
         # 텍스트 출력
