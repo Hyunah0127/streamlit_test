@@ -72,7 +72,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    st.video(video_file_paths[cctv_number - 1])
 
     with tab2:
         # 페이지 번호를 저장할 Session State 생성
@@ -98,7 +98,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    st.video(video_file_paths[cctv_number - 1])
 
     with tab3:
         # 페이지 번호를 저장할 Session State 생성
@@ -124,7 +124,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    st.video(video_file_paths[cctv_number - 1])
     
     with tab4:
         # 페이지 번호를 저장할 Session State 생성
@@ -150,7 +150,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    st.video(video_file_paths[cctv_number - 1])
         
 
 # EVENT 누를 떄
@@ -175,7 +175,7 @@ if selected == emoji.emojize("이상행동 발생 구역 모니터링"):
 
     with cols[0]:  # 좌측 페이지
         # CCTV 영상 출력
-        st.video('https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/falldown_detection.mp4', start_time=0)
+        st.video('https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/falldown_detection.mp4')
 
     with cols[1]:  # 우측 페이지
         # 텍스트 출력
