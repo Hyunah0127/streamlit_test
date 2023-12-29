@@ -2,6 +2,4 @@ streamlit
 numpy
 pandas
 streamlit_option_menu
-PIL
-emoji
 os
