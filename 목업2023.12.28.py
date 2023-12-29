@@ -51,7 +51,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/tree/main/video/normal1.mp4',  # 첫 번째 CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal1.mp4',  # 첫 번째 CCTV 동영상 파일 경로
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',  # 두 번째 CCTV 동영상 파일 경로
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
