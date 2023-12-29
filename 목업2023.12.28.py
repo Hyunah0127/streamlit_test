@@ -45,13 +45,13 @@ if selected == emoji.emojize("실시간 CCTV"):
 
     st.markdown('<p class="big-font">실시간 CCTV</p>', unsafe_allow_html=True)
 
-    tab1, tab2, tab3 = st.tabs(["1층", "2층", "3층"])
+    tab1, tab2, tab3, tab4 = st.tabs(["1층", "2층", "3층", "4층"])
 
     with tab1:
                     
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',  # 첫 번째 CCTV 동영상 파일 경로
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/tree/main/video/normal1.mp4',  # 첫 번째 CCTV 동영상 파일 경로
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',  # 두 번째 CCTV 동영상 파일 경로
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
