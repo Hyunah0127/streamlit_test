@@ -62,17 +62,16 @@ if selected == emoji.emojize("실시간 CCTV"):
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
         ]
 
-        # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
-        for i in range(3):  # 3행
+      # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
+      for i in range(3):  # 3행
             cols = st.columns(3)  # 각 행에 3열
             for j, col in enumerate(cols, start=1):
                 with col:
                     # 현재 행과 열에 따라 CCTV 번호 계산
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
-                    # 각 CCTV 번호에 해당하는 동영상 재생
-                    st.video(video_file_paths[cctv_number - 1],start_time=0)
-
+                    # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
+                    st.markdown(f'<video autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
     with tab2:
         st.write("2층")
 
