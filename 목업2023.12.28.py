@@ -56,7 +56,7 @@ if selected == emoji.emojize("실시간 CCTV"):
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal3.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal4.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/video/normal5.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/blob/main/video/faint_detection.mp4'
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/blob/main/video/falldown_detection.mp4'
         ]
 
         for i in range(2):  # 3행
