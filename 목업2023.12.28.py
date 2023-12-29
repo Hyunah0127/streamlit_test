@@ -54,13 +54,10 @@ if selected == emoji.emojize("실시간 CCTV"):
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
             'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
-            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4',
+            'https://raw.githubusercontent.com/Hyunah0127/streamlit_test/main/dataset/fi001.mp4'
         ]
 
-        for i in range(3):  # 3행
+        for i in range(2):  # 3행
             cols = st.columns(3)  # 각 행에 3열
             for j, col in enumerate(cols, start=1):
                 with col:
