@@ -68,7 +68,7 @@ if selected == emoji.emojize("실시간 CCTV"):
                     cctv_number = i * 3 + j
                     st.subheader(f"CCTV {cctv_number}")
                     # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
-                    st.markdown(f'<video autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
+                    st.markdown(f'<video height="180" width="288" controls autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
 
     with tab2:
         st.write("2층")
