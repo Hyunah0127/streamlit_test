@@ -49,15 +49,15 @@ if selected == emoji.emojize("실시간 CCTV"):
                     
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
         video_file_paths = [
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),  # 첫 번째 CCTV 동영상 파일 경로
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),   # 두 번째 CCTV 동영상 파일 경로
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
-            os.path.abspath('C:/Users/user/aivle school/빅프로젝트/대시보드/fi001.mp4'),
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',  # 첫 번째 CCTV 동영상 파일 경로
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',  # 두 번째 CCTV 동영상 파일 경로
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
+            'https://github.com/Hyunah0127/streamlit_test/blob/main/dataset/fi001.mp4',
         ]
 
         # 3행 3열 그리드 생성 및 각 그리드에 동영상 삽입
