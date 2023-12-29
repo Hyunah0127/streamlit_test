@@ -6,7 +6,9 @@ import emoji
 import os
 
 # Page setting
-st.set_page_config(layout="wide", page_title="공항 이상행동 탐지 솔루션")
+st.set_page_config(layout="wide", 
+                   page_title="공항 이상행동 탐지 솔루션",
+                  page_icon='favicon-96x96.png')
 
 
 # 사이드 바 꾸미기
