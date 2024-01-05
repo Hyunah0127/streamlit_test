@@ -1,7 +1,5 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-import folium
-from streamlit_folium import st_folium
 import pandas as pd
 import numpy as np
 import plotly.express as px
