@@ -87,6 +87,8 @@ if selected == emoji.emojize("실시간 CCTV"):
                     st.subheader(cctv_titles[cctv_number - 1])
                     # 각 CCTV 번호에 해당하는 동영상 재생
                     st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
+                    st.markdown(f'<video height=auto width=102% controls autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
 
 
 
@@ -120,6 +122,8 @@ if selected == emoji.emojize("실시간 CCTV"):
                     st.subheader(cctv_titles[cctv_number - 1])
                     # 각 CCTV 번호에 해당하는 동영상 재생
                     st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
+                    st.markdown(f'<video height=auto width=102% controls autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
 
     with tab3:
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
@@ -151,6 +155,8 @@ if selected == emoji.emojize("실시간 CCTV"):
                     st.subheader(cctv_titles[cctv_number - 1])
                     # 각 CCTV 번호에 해당하는 동영상 재생
                     st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
+                    st.markdown(f'<video height=auto width=102% controls autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
     
     with tab4:
         # 각 CCTV 위치에 해당하는 동영상 파일 경로 또는 URL
@@ -182,6 +188,8 @@ if selected == emoji.emojize("실시간 CCTV"):
                     st.subheader(cctv_titles[cctv_number - 1])
                     # 각 CCTV 번호에 해당하는 동영상 재생
                     st.video(video_file_paths[cctv_number - 1],start_time=0)
+                    # 각 CCTV 번호에 해당하는 동영상 재생 (자동재생 설정)
+                    st.markdown(f'<video height=auto width=102% controls autoplay muted controls><source src="{video_file_paths[cctv_number - 1]}" type="video/mp4"></video>', unsafe_allow_html=True)
         
 
 # 이상행동 EVENT 확인
